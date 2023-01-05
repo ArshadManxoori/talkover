@@ -1,0 +1,18 @@
+POST http://localhost:5500/api/send-otp HTTP/1.1
+Content-Type: application/json
+
+//body of rqst
+{
+    "phone":"+918178309626"
+}
+
+###
+
+POST http://localhost:5500/api/verify-otp HTTP/1.1
+Content-Type: application/json
+
+{
+    "phone":"+918178309626",
+    "otp": 8185,
+    "hash": "36d5dbe1f751dfcb612beda3ef795906d5a1a3e361b06856e6a8f0c3bca18fdb.1670831348161"
+}
